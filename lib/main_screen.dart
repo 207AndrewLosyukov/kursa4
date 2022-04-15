@@ -15,7 +15,7 @@ class MainScreenState extends State<MainScreen> {
   int currentTab = 0;
 
   // Открытие главной страницы
-  openMainPage() => setState(() => currentTab = 0);
+  openHomePage() => setState(() => currentTab = 0);
   // Подкасты
   openPodcastPage() => setState(() => currentTab = 1);
   // Профиль
@@ -33,7 +33,7 @@ class MainScreenState extends State<MainScreen> {
         child: AnimatedSwitcher(
           duration: const Duration(milliseconds: 200),
           child: <Widget>[
-            // const MainPage(),
+            // const HomePage(),
             // const PodcastPage(),
             // const ProfilePage(),
           ][currentTab],
@@ -50,7 +50,7 @@ class MainScreenState extends State<MainScreen> {
               Icons.home,
               size: iconSize,
             ),
-            label: 'Main',
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(
