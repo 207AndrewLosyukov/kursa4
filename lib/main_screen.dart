@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:shop_flutter_app/screens/main/main_page.dart';
-// import 'package:shop_flutter_app/screens/main/podacst_page.dart';
+// import 'package:shop_flutter_app/screens/main/home_page.dart';
+// import 'package:shop_flutter_app/screens/main/podcast_page.dart';
 // import 'package:shop_flutter_app/screens/main/profile_page.dart';
 
 class MainScreen extends StatefulWidget {
@@ -30,14 +30,14 @@ class MainScreenState extends State<MainScreen> {
       // ),
       body: Container(
         color: Colors.orange[100],
-        child: AnimatedSwitcher(
-          duration: const Duration(milliseconds: 200),
-          child: <Widget>[
-            // const HomePage(),
-            // const PodcastPage(),
-            // const ProfilePage(),
-          ][currentTab],
-        ),
+        // child: AnimatedSwitcher(
+        //   duration: const Duration(milliseconds: 200),
+        //   child: <Widget>[
+        //     // const HomePage(),
+        //     // const PodcastPage(),
+        //     // const ProfilePage(),
+        //   ][currentTab],
+        // ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentTab,
